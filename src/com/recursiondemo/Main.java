@@ -1,13 +1,36 @@
 package com.recursiondemo;
 
-public class Main {
+import java.util.Scanner;
 
+public class Main {
 
     public static void main(String[] args) {
         // write your code here
-    System.out.println("factorial of 6 is: "+fact(6));
- square(12);
-    }
+        System.out.println("Enter the number");
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t-- > 0) {
+            int n = sc.nextInt();
+            int a[] = new int[n];
+            for (int i = 0; i < n; i++) {
+                a[i] = sc.nextInt();
+            }
+            int k = sc.nextInt();
+            int f = 1;
+            for (int i = 0; i < n; i++) {
+                if (k == a[i]) {
+                    System.out.println(i);
+                    f = 0;
+                    break;
+                }
+            }
+            if (f == 1)
+                System.out.println("-1");
+        }
+
+  /*  System.out.println("factorial of 6 is: "+fact(6));
+ square(12);*/
+}
 
     /**
      * Below function is used to find factorial of n using recursion
@@ -37,4 +60,18 @@ public class Main {
                return square(n - 1);
            }
         }
+/*
+
+        private static int findNumUsingBinarySearch(int[] n, int k)
+        {
+            for (int i = 0; i <n.length ; i++) {
+
+                if
+
+            }
+            return 0;
+        }
+*/
+
+
     }
