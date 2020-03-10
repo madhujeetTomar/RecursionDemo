@@ -5,8 +5,12 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
+        Child child =new Child();
+        child.
+
         // write your code here
-        System.out.println("Enter the number");
+       /* System.out.println("Enter the number");
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while (t-- > 0) {
@@ -26,7 +30,7 @@ public class Main {
             }
             if (f == 1)
                 System.out.println("-1");
-        }
+        }*/
 
   /*  System.out.println("factorial of 6 is: "+fact(6));
  square(12);*/
